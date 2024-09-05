@@ -1,4 +1,4 @@
-
+# QUERRY TYPE: CTE (Common Table Expression)
 
 querry = """
   WITH SALES_SUMMARY AS (
