@@ -1,7 +1,7 @@
 
 
 querry = """
-  WITH SalesSummary AS (
+  WITH SALES_SUMMARY AS (
   SELECT 
       YEAR(POSTING_DATE) AS Fiscal_Year,
       CONCAT('Q', QUARTER(POSTING_DATE)) AS Fiscal_Quarter,
@@ -32,7 +32,7 @@ querry = """
          ELSE 0 END AS Avg_Sales_per_Distributor, -- Handle division by zero
     Customer_Type
   FROM 
-    SalesSummary
+    SALES_SUMMARY
   ORDER BY 
     Business_Line ASC;
 """
